@@ -1,0 +1,38 @@
+.heading {
+  color: green;
+}
+
+.collapse {
+  justify-content: right;
+}
+
+.navbar {
+  background-color: crimson !important;
+  border-radius: 0px 0px 0px 35px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 600;
+  color: antiquewhite;
+}
+
+.nav-link {
+  font-size: 22px;
+  font-weight: 500;
+  color: black !important;
+}
+
+.add-bar {
+  border-right: 2px solid black !important;
+}
+
+.homepage-container {
+  margin: 40px;
+}
+
+.chart {
+  display: flex;
+  margin: auto;
+  margin-top: 6%;
+}
