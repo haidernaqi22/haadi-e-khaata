@@ -16,6 +16,7 @@ export default function Home() {
     ]
     return (
         <div className='homepage-container'>
+            <button className='btn btn-primary'>Testing Button</button>
             <h1>Stats of Records</h1>
             {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={['DateRangePicker']}>
