@@ -22,21 +22,23 @@ export default function Home() {
     return (
         <div className='homepage-container'>
             <h1>Stats of Records</h1>
-            <div>
-                <label>Funds:</label>
+            <div className='d-flex flex-row bd-highlight mb-3 form-floating'>
+            <div className='p-2 '>
+                <label className='p-2 primary'>Funds:</label>
                 <input
                     type="number"
                     value={fundsValue}
                     onChange={(e) => setFundsValue(e.target.value)}
                 />
             </div>
-            <div>
-                <label>Expenses:</label>
+            <div className='p-2 '>
+                <label className='p-2 '>Expenses:</label>
                 <input
                     type="number"
                     value={expensesValue}
                     onChange={(e) => setExpensesValue(e.target.value)}
                 />
+            </div>
             </div>
             {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={['DateRangePicker']}>
