@@ -1,34 +1,32 @@
 import React from 'react'
 import { PieChart } from '@mui/x-charts/PieChart';
-// import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-// import { LocalizationProvider } from '@mui/x-date-pickers';
-// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-// import { DateRangePicker } from '@mui/x-date-pickers/DateRangePicker';
+import DateRangePicker from 'rsuite/DateRangePicker';
+import 'rsuite/dist/rsuite.min.css';
+import Headings from './shared/Headings';
+import Modal from './shared/Modal';
 
 export default function Home() {
     const chartData = [
         {
             data: [
                 { id: 0, value: 60, label: 'Funds' },
-                { id: 1, value: 40, label: 'Expenses' },
+                { id: 1, value: 50, label: 'Expenses' },
+                { id: 1, value: 50, label: 'Expenses' },
             ],
         },
     ]
     return (
         <div className='homepage-container'>
-            <button className='btn btn-primary'>Testing Button</button>
-            <h1>Stats of Records</h1>
-            {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DemoContainer components={['DateRangePicker']}>
-                    <DateRangePicker localeText={{ start: 'Start Date', end: 'End Date' }} />
-                </DemoContainer>
-            </LocalizationProvider> */}
+            <Headings title={'Stats of Records'} />
+            <DateRangePicker className='date-range' />
             <PieChart
-                className="chart"
+                className="chart black-mode"
                 series={chartData}
                 width={600}
                 height={400}
             />
+            <div className='version-text'>Version 0.0.0</div>
+            <Modal />
         </div>
     )
 }
